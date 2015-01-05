@@ -33,7 +33,7 @@ class MustacheL4ServiceProvider extends ServiceProvider {
 
 		$app->extend('view', function($env, $app)
 		{
-			$env->addExtension('mustache', 'mustache');
+			$env->addExtension('html', 'mustache');
 			return $env;
 		});
 	}
